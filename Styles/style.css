@@ -1,0 +1,40 @@
+.wrapper {
+    width: 900px;
+    height: 350px;
+    background-color: rgb(3, 3, 3);
+    border-radius: 10px;
+    margin-left: 300px;    
+}
+.main-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px auto 100px;
+}
+.sidebar {
+    background-color: green;
+    width: 200px;
+    height: 200px;
+    margin-left: 300px;
+    position: relative;
+    top: 75px;
+    border-radius: 5px;
+}
+main {
+    background-color: pink;
+    width: 675px;
+    height: 800px;
+    margin-right: 380px;
+    position: relative;
+    top: 75px;
+    display: grid;
+    grid-template-rows: repeat(9, 1fr);
+    border-radius: 5px;
+}
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: DarkSalmon;
+    color: white;
+    position: relative;
+    top: 750px;
+  }
