@@ -139,3 +139,19 @@ footer {
     position: relative;
     top: 10px;
   }
+  @media only screen and (max-width: 1200px) {
+        .wrapper {
+            width: 100%;
+            float: none;
+            display: block;
+            text-align: left;
+            flex-direction: column;
+         }
+           .header-titile {
+            background-color: red;
+            
+           }
+           .main-wrapper {
+            display: none;
+           }
+  }
