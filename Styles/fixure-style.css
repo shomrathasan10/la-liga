@@ -65,7 +65,7 @@ body {
     text-decoration: none;
 }
 main {
-    background-color: rgb(14, 252, 65);
+    background-color: white;
     width: 675px;
     height: 950px;
     margin-right: 380px;
@@ -76,24 +76,39 @@ main {
     border-radius: 5px;
     
 }
- .matches {
-    box-shadow: 10px 20px 10px gray;
-    width: 40%;
-    margin: 5%;
-    padding-left: 10px;
-    
+.matches {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 24px;
+    justify-items: center;
+    position: relative;
+    top: 5px;
+    box-shadow: 1px solid gray;
+}
+.shadow {
+    box-shadow: 1px 1px rgb(230, 221, 221);
+    border: 1px solid whitesmoke;
+    border-radius: 7px;
 }
 .match, .match-banner img {
+    width: 300px;
     width: 200px;
-    width: 150px;
 }
-.total-match {
+.match-info {
     display: flex;
- 
+    align-items: center;
+    justify-content: space-between;
+}
+.transfer-button, .match-info {
+    margin-left: 5px;
+}
+.icon {
+    margin-right: 100px;
+}
+.icon-text {
+    padding: 5px;
 }
 
-.transfer-button {
-    text-align: center;
 }
 footer {
     text-align: center;
